@@ -830,9 +830,14 @@ nav {
     .steps-container::before { display: none; }
     .step-card { width: 100%; max-width: 320px; }
     .how-to-start .section-title { font-size: 28px; }
-    .transform-card { min-width: 85vw; }
-    .transform-images .img-box { height: 200px; }
-    .slider-wrapper { padding: 0 5px; }
+    .transform-card { min-width: 92vw; border-radius: 16px; }
+    .transform-images { padding: 12px 12px 0 12px; gap: 6px; }
+    .transform-images .img-box { height: 240px; border-radius: 8px; }
+    .transform-labels { padding: 8px 12px 0 12px; gap: 6px; }
+    .label-before, .label-after { padding: 10px 0; font-size: 14px; border-radius: 8px; }
+    .transform-name { font-size: 20px; padding: 14px; }
+    .slider-wrapper { padding: 0 10px; }
+    .slider-controls { margin-top: 25px; }
     .milestone-divider { display: none; }
     .milestones .section-main-title { font-size: 26px; }
     .milestone-item { max-width: 100%; }
