@@ -15,7 +15,7 @@ function updateSlider() {
     const maxIndex = Math.max(0, cards.length - getVisible());
     if (current > maxIndex) current = maxIndex;
     if (current < 0) current = 0;
-    track.style.transform = `translateX(${current * getCardWidth()}px)`;
+    track.style.transform = `translateX(${-current * getCardWidth()}px)`;
 }
 
 document.getElementById('nextBtn').addEventListener('click', () => {
