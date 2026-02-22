@@ -525,44 +525,22 @@ nav {
     box-shadow: 0 20px 40px rgba(225, 6, 0, 0.15);
 }
 
-.transform-images {
+/* ===== Transform Box ===== */
+.transform-box {
     display: flex;
-    gap: 8px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     padding: 15px 15px 0 15px;
     direction: ltr;
 }
 
-.transform-images .img-box {
-    flex: 1;
-    position: relative;
+.transform-box img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 10px;
-    overflow: hidden;
-    height: 260px;
-    background: #2a2a2a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.transform-images .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center center;
-    background: #1a1a1a;
-}
-
-.transform-images .img-box.placeholder {
-    flex-direction: column;
-    gap: 8px;
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 12px;
-}
-
-.transform-images .img-box.placeholder::before {
-    content: '🖼️';
-    font-size: 30px;
-    opacity: 0.3;
+    flex: 1;
 }
 
 .transform-labels {
@@ -831,9 +809,8 @@ nav {
     .step-card { width: 100%; max-width: 320px; }
     .how-to-start .section-title { font-size: 28px; }
     .transform-card { min-width: 92vw; border-radius: 16px; }
-    .transform-images { padding: 12px 12px 0 12px; gap: 6px; }
-    .transform-images .img-box { height: auto; min-height: 150px; border-radius: 8px; }
-    .transform-images .img-box img { height: auto; width: 100%; object-fit: contain; }
+    .transform-box { padding: 12px 12px 0 12px; gap: 8px; }
+    .transform-box img { height: 280px; border-radius: 8px; }
     .transform-labels { padding: 8px 12px 0 12px; gap: 6px; }
     .label-before, .label-after { padding: 10px 0; font-size: 14px; border-radius: 8px; }
     .transform-name { font-size: 20px; padding: 14px; }
