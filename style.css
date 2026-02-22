@@ -529,6 +529,7 @@ nav {
     display: flex;
     gap: 8px;
     padding: 15px 15px 0 15px;
+    direction: ltr;
 }
 
 .transform-images .img-box {
@@ -536,7 +537,7 @@ nav {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height: 220px;
+    height: 260px;
     background: #2a2a2a;
     display: flex;
     align-items: center;
@@ -547,7 +548,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center center;
 }
 
 .transform-images .img-box.placeholder {
@@ -567,6 +568,7 @@ nav {
     display: flex;
     gap: 8px;
     padding: 10px 15px 0 15px;
+    direction: ltr;
 }
 
 .label-before,
@@ -828,7 +830,7 @@ nav {
     .step-card { width: 100%; max-width: 320px; }
     .how-to-start .section-title { font-size: 28px; }
     .transform-card { min-width: 85vw; }
-    .transform-images .img-box { height: 160px; }
+    .transform-images .img-box { height: 200px; }
     .slider-wrapper { padding: 0 5px; }
     .milestone-divider { display: none; }
     .milestones .section-main-title { font-size: 26px; }
