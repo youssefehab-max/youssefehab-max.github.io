@@ -140,10 +140,10 @@ nav {
     border-radius: 0;
     border: none;
     box-shadow: none;
-    -webkit-mask-image: linear-gradient(to left, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
     mask-image: linear-gradient(to left, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
-    -webkit-mask-composite: source-in;
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
     mask-composite: intersect;
+    -webkit-mask-composite: source-in;
     filter: drop-shadow(-20px 0 40px rgba(0,0,0,0.8));
 }
 
@@ -832,7 +832,8 @@ nav {
     .how-to-start .section-title { font-size: 28px; }
     .transform-card { min-width: 92vw; border-radius: 16px; }
     .transform-images { padding: 12px 12px 0 12px; gap: 6px; }
-    .transform-images .img-box { height: 240px; border-radius: 8px; }
+    .transform-images .img-box { height: auto; min-height: 150px; border-radius: 8px; }
+    .transform-images .img-box img { height: auto; width: 100%; object-fit: contain; }
     .transform-labels { padding: 8px 12px 0 12px; gap: 6px; }
     .label-before, .label-after { padding: 10px 0; font-size: 14px; border-radius: 8px; }
     .transform-name { font-size: 20px; padding: 14px; }
