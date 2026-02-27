@@ -140,25 +140,11 @@ nav {
     border-radius: 0;
     border: none;
     box-shadow: none;
-    mask-image: linear-gradient(to left, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
     -webkit-mask-image: linear-gradient(to left, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
-    mask-composite: intersect;
+    mask-image: linear-gradient(to left, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
     -webkit-mask-composite: source-in;
+    mask-composite: intersect;
     filter: drop-shadow(-20px 0 40px rgba(0,0,0,0.8));
-}
-
-.btn {
-    background: #e10600;
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: white;
-    color: #e10600;
 }
 
 /* ===== Programs Include Section ===== */
@@ -510,10 +496,10 @@ nav {
 }
 
 .transform-card {
-    background: #1a1a1a;
-    border-radius: 16px;
-    overflow: hidden;
-    min-width: 280px;
+    background: #141414;
+    border-radius: 20px;
+    padding: 16px 16px 20px;
+    min-width: 340px;
     flex-shrink: 0;
     border: 1px solid #222;
     transition: 0.4s;
@@ -522,61 +508,62 @@ nav {
 .transform-card:hover {
     border-color: #e10600;
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(225, 6, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(225, 6, 0, 0.2);
 }
 
 /* ===== Transform Box ===== */
 .transform-box {
     display: flex;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 15px 0 15px;
     direction: ltr;
 }
 
-.transform-box img {
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    flex: 1;
-}
-
-.transform-labels {
+.img-wrap {
     display: flex;
-    gap: 8px;
-    padding: 10px 15px 0 15px;
-    direction: ltr;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
 }
 
-.label-before,
-.label-after {
-    flex: 1;
-    padding: 6px 0;
-    border-radius: 6px;
-    font-size: 13px;
+.img-wrap img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* ===== Before / After Labels ===== */
+.t-label {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 50px;
+    font-size: 12px;
     font-weight: 800;
-    letter-spacing: 1px;
-    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .label-before {
-    background: #333;
-    color: white;
+    background: #1a1a1a;
+    color: #888;
+    border: 1px solid #444;
 }
 
 .label-after {
     background: #e10600;
-    color: white;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(225, 6, 0, 0.5);
 }
 
 .transform-name {
-    padding: 15px;
+    padding: 16px 0 4px 0;
     font-size: 18px;
     font-weight: 700;
     color: white;
     direction: rtl;
+    text-align: center;
 }
 
 .slider-controls {
@@ -795,6 +782,7 @@ nav {
     to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero { flex-direction: column-reverse; align-items: center; justify-content: flex-end; padding: 100px 5% 40px; height: auto; min-height: 100vh; gap: 0; }
@@ -808,14 +796,9 @@ nav {
     .steps-container::before { display: none; }
     .step-card { width: 100%; max-width: 320px; }
     .how-to-start .section-title { font-size: 28px; }
-    .transform-card { width: 300px; height: 400px; }
-    .transform-box {  padding: 12px 12px 0 12px; gap: 8px; }
-    .transform-box img { height: 280px; border-radius: 8px; }
-    .transform-labels { padding: 8px 12px 0 12px; gap: 6px; }
-    .label-before, .label-after { padding: 10px 0; font-size: 14px; border-radius: 8px; }
-    .transform-name { font-size: 20px; padding: 14px; }
-    .slider-wrapper { padding: 0 10px; }
-    .slider-controls { margin-top: 25px; }
+    .transform-card { min-width: calc(100vw - 80px); max-width: 100%; }
+    .slider-wrapper { padding: 0; }
+    .img-wrap img { height: 200px; }
     .milestone-divider { display: none; }
     .milestones .section-main-title { font-size: 26px; }
     .milestone-item { max-width: 100%; }
