@@ -18,6 +18,53 @@
 </head>
 
 <body>
+<!-- ===== Ramadan Offer Popup ===== -->
+<div id="ramadanPopup" class="popup-overlay">
+  <div class="popup-box">
+
+    <!-- Close Button -->
+    <button class="popup-close" onclick="closePopup()">×</button>
+
+    <!-- Content -->
+    <div class="popup-content">
+
+      <!-- Text Side -->
+      <div class="popup-text">
+        <h2>عروض رمضان</h2>
+        <h3>جاهز للفورمة؟</h3>
+
+        <ul>
+          <li>✔ نظام تمرين متفصل عليك</li>
+          <li>✔ نظام غذائي من اختيارك في الأكل</li>
+          <li>✔ متابعة يومية</li>
+          <li>✔ التزام تام طول رحلتك</li>
+        </ul>
+
+        <p class="offer">
+          العرض لعدد محدود
+        </p>
+
+        <p class="coupon">
+          استخدم كود: <span>Ramadan</span>
+        </p>
+
+        <a href="#plans" class="popup-btn">اشترك الآن ↙</a>
+      </div>
+
+      <!-- Image Side -->
+      <div class="popup-image">
+        <img src="images/coach-youssef.jpg" alt="Offer">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 <!-- ===== Navbar ===== -->
 <nav>
@@ -232,7 +279,7 @@
     <div class="cards">
         <div class="card">
             <h3>شهر واحد</h3>
-            <div class="price">500 / شهر</div>
+            <div class="price"><span class="old-price">500</span> 750 / شهر</div>
             <ul>
                 <li>خطة تحول كاملة</li>
                 <li>دليل غذائي</li>
@@ -242,7 +289,7 @@
         </div>
         <div class="card featured">
             <h3>شهرين</h3>
-            <div class="price">750 / شهر</div>
+            <div class="price"><span class="old-price">750</span> 1000 / شهر</div>
             <ul>
                 <li>خطة تحول كاملة</li>
                 <li>تدريب خاص</li>
@@ -252,7 +299,7 @@
         </div>
         <div class="card">
             <h3>3 شهور</h3>
-            <div class="price">1000 / شهر</div>
+            <div class="price"><span class="old-price">1000</span> 1250 / شهر</div>
             <ul>
                 <li>خطة تحول كاملة</li>
                 <li>تدريب فردي</li>
@@ -263,7 +310,6 @@
         </div>
     </div>
 </section>
-
 <!-- ===== FAQ ===== -->
 <section class="faq" id="faq">
     <div class="faq-header">
